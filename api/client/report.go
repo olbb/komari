@@ -25,7 +25,7 @@ import (
 const (
 	// 如果超过这个时间没有收到任何消息，则认为连接已死
 	// 因为目前server没有存agent的信息上报间隔。只有写一个默认的
-	readWait = 11 * time.Second
+	readWait = 60 * time.Second
 )
 
 func UploadReport(c *gin.Context) {
